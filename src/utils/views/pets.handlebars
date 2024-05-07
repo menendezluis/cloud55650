@@ -1,0 +1,15 @@
+  <div class="pet-list">
+  {{#each pets}}
+    <div class="pet-card
+    {{#if adopted}}adopted{{/if}}">  <div class="pet-info"> <h2>{{name}}</h2>
+    <p>Especie:
+    {{specie}}</p> <p>Fecha de nacimiento:
+    {{birthDate}}</p>
+    {{#if adopted}}
+      <p class="status">Adoptado</p>
+    {{else}}
+      <p class="status">Disponible para adopción</p>
+    {{/if}}
+    </div> </div>
+  {{/each}}
+  </div>
